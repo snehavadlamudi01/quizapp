@@ -19,6 +19,5 @@ public class QuestionWrapper {
         this.option2 = option2;
         this.option3 = option3;
         this.option4 = option4;
-
     }
 }
