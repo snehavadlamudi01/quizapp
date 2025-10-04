@@ -2,10 +2,10 @@ package com.telusko.quizapp.Controller;
 
 import com.telusko.quizapp.Model.Question;
 import com.telusko.quizapp.Service.QuestionService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -26,7 +26,7 @@ public class QuestionController {
     }
 
     @PostMapping("add")
-    public ResponseEntity<String> addQuestion(@RequestBody Question question){
+    public ResponseEntity<String> addQuestion(@Valid @RequestBody Question question){
         return questionService.addQuestion(question);
     }
 
