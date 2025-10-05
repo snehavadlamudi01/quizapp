@@ -2,6 +2,7 @@ package com.telusko.quizapp.Controller;
 
 import com.telusko.quizapp.Model.Question;
 import com.telusko.quizapp.Service.QuestionService;
+import com.telusko.quizapp.dto.ApiResponse;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -26,8 +27,11 @@ public class QuestionController {
     }
 
     @PostMapping("add")
-    public ResponseEntity<String> addQuestion(@Valid @RequestBody Question question){
-        return questionService.addQuestion(question);
+    public ResponseEntity<ApiResponse> addQuestion(@Valid @RequestBody Question question){
+        questionService.addQuestion(question);
+
+        ApiResponse response =new ApiResponse(200, "Success", "Question added successfully");
+        return ResponseEntity.ok(response);
     }
 
     @DeleteMapping ("delete/{id}")
