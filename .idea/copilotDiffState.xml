@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/quizapp/src/main/java/com/telusko/quizapp/dao/QuestionDao.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/quizapp/src/main/java/com/telusko/quizapp/dao/QuestionDao.java" />
+              <option name="originalContent" value="package com.telusko.quizapp.dao;&#10;&#10;import com.telusko.quizapp.Model.Question;&#10;import org.springframework.data.jpa.repository.JpaRepository;&#10;import org.springframework.data.jpa.repository.Query;&#10;import org.springframework.stereotype.Repository;&#10;&#10;import java.util.List;&#10;&#10;@Repository&#10;public interface QuestionDao extends JpaRepository&lt;Question, Integer&gt; {&#10;&#10;    List&lt;Question&gt; findByCategory(String category);&#10;&#10;    @Query(value = &quot;SELECT * FROM question q WHERE q.category = :category ORDER BY RANDOM() LIMIT :numQ&quot;, nativeQuery = true)&#10;    List&lt;Question&gt; findRandomQuestionsByCategory(String category, Integer numQ);&#10;}&#10;" />
+              <option name="updatedContent" value="package com.telusko.quizapp.dao;&#10;&#10;import com.telusko.quizapp.Model.Question;&#10;import org.springframework.data.jpa.repository.JpaRepository;&#10;import org.springframework.data.jpa.repository.Query;&#10;import org.springframework.stereotype.Repository;&#10;&#10;import java.util.List;&#10;&#10;@Repository&#10;public interface QuestionDao extends JpaRepository&lt;Question, Integer&gt; {&#10;&#10;    List&lt;Question&gt; findByCategory(String category);&#10;&#10;    @Query(value = &quot;SELECT * FROM question q WHERE q.category = :category ORDER BY RAND() LIMIT :numQ&quot;, nativeQuery = true)&#10;    List&lt;Question&gt; findRandomQuestionsByCategory(String category, Integer numQ);&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
