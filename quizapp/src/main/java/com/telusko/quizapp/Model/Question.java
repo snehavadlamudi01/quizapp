@@ -1,5 +1,6 @@
 package com.telusko.quizapp.Model;
 
+import com.telusko.quizapp.validation.QuestionTitleValid;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,10 +17,11 @@ public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
-
-    @NotBlank(message = "Question cannot be blank")
-    @Size(min = 50, message = "Question must contain more than 50 letters")
-    @Pattern(regexp = "^[A-Za-z\\s?.,'\"!()]+$", message = "Question must be in alphabetical order")
+//
+//    @NotBlank(message = "Question cannot be blank")
+//    @Size(min = 50, message = "Question must contain more than 50 letters")
+//    @Pattern(regexp = "^[A-Za-z\\s?.,'\"!()]+$", message = "Question must be in alphabetical order")
+    @QuestionTitleValid
     private String questionTitle;
     private String option1;
     private String option2;
