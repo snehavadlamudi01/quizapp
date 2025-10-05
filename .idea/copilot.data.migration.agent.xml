@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AgentMigrationStateService">
+    <option name="pendingSessionIds">
+      <option value="002e4dde-990d-4439-b04a-51c99d81778b" />
+    </option>
+    <option name="pendingTurns">
+      <map>
+        <entry key="002e4dde-990d-4439-b04a-51c99d81778b">
+          <value>
+            <set>
+              <option value="654df01e-a032-4283-875b-ef43d4b73f55" />
+              <option value="eac37ca6-1e63-496a-b349-299c2783da74" />
+              <option value="f846ca7b-c0ac-404f-9bb7-04e394455d93" />
+              <option value="c5e0678a-95b1-4f73-bd6d-85d5819f92f2" />
+              <option value="8b2c0968-3912-4790-87d9-909d4b822040" />
+              <option value="ba5280ab-2ddc-4739-9946-6c33871258f2" />
+              <option value="ad9a6c08-d5b2-4734-8c67-21fe64e9a39d" />
+              <option value="9e3a5cf7-7343-4056-8c40-c1f387fbccdf" />
+              <option value="9848a8b1-a9d8-40db-b915-1affe350356d" />
+              <option value="731b8d49-3020-4606-80fc-ae4343f07718" />
+              <option value="ee82ef6d-ebb9-4df1-afd0-ff41dad4cfac" />
+              <option value="d2b11fd9-09bf-4cc2-b860-35b7bb18a686" />
+              <option value="c3f37776-c61b-454e-bde2-258f91aa2916" />
+              <option value="64ff1f80-4ee1-4b26-84a0-f9f19d4c6e05" />
+              <option value="80af428c-9885-467e-8031-3a1fad309c2c" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <pendingWorkingSetItems>
+      <entry key="002e4dde-990d-4439-b04a-51c99d81778b">
+        <set>
+          <option value="file://$PROJECT_DIR$/quizapp/src/main/java/com/telusko/quizapp/dao/QuestionDao.java" />
+        </set>
+      </entry>
+    </pendingWorkingSetItems>
+  </component>
+</project>
